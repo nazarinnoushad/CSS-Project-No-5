@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CSS Project 5 </title>
+    <script>
+        tailwind.config = {
+          theme: { screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },   
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="w-full h-screen bg-no-repeat bg-center bg-cover"
+    style="background-image: url(./css\ project\ 5\ image.jpg);"> 
+    <nav class="flex justify-between px-2 lg:px-24  bg-gradient-to-b from-white to-trasparant h-20 ">
+      <div class="text-3xl font-bold text-sky-800 py-5">
+      Logo
+      </div>
+      <div class="flex items-center gap-5 border-b-2 border-sky-800 pl-6 py-6">
+      <ul class="flex gap-5 text-sky-800 font-bold items-center text-md  border-sky-800  ">
+        <li class="hidden lg:flex">About us</li>
+        <li class="hidden lg:flex">Benefits</li>
+        <li class="hidden lg:flex">Projects</li>
+        <li class="hidden lg:flex">Stages</li>
+        <li class="hidden lg:flex">Services</li>
+      </ul>
+      <d iv class="flex text-xs gap-2 text-sky-800 font-bold  ">
+        <i class="fa-solid fa-phone-volume text-2xl text-sky-800"></i> Call Us <br>+38(097)654 54 34
+      </d>
+      </div>
+    </nav> 
+    <main class="px-10 lg:px-28 flex justify-between ">
+      <div class="  text-sky-800 mt-10 lg:mt-24">
+      <h1 class="text-3xl  xl:text-5xl font-bold w-96 lg:w-[400px]  xl:w-[550px] ">
+        Interior Design That Care  About Details
+      </h1>
+      <button class="border-2 border-sky-800 rounded-full px-6 py-2 mt-10 lg:mt-5 font-bold">
+        Learn More
+      </button>
+      </div>
+        <div class="mt-10 flex flex-col hidden lg:flex h-[500px] w-[600px] relative">
+          <div class="h-28 w-52 bg-gray-700 opacity-50 absolute top-0 right-40 px-2 py-2  ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-white  rounded-full w-10  ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+            </svg>
+            <div class=" text-white tracking-tight  ">
+              We create your space better <br> based on your own idea
+          </div>
+          
+          </div> 
+          <div class="border-r-2 border-gray-400 absolute bottom-[325px] right-48 py-3 text-transparent pb-7">
+            1 
+          </div>
+          <div class="absolute right-[186px] bottom-[310px]  text-gray-500   ">
+            <i class="fa-solid fa-circle text-xs"></i> 
+          </div>      
+         <div class=" h-28 w-52 bg-gray-700 opacity-50  absolute bottom-0 left-20 px-2 py-2 ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 py-1 h-6 bg-white rounded-full w-10  ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+          </svg>
+         <div class="text-white ">
+          Innovation, ideas, stylish <br>design for home and <br> business
+         </div>
+         <div class="border-b-2 border-black absolute left-[208px] bottom-6 px-10 text-transparent ">
+          l
+         </div>
+         <div class="text-black absolute left-[290px] bottom-4">
+          <i class="fa-solid fa-circle text-xs"></i>
+         </div>
+         </div>
+        
+         
+      
+    </div>
+         
+      
+    </main> 
+    </div>
+    
+</body>
+</html>
